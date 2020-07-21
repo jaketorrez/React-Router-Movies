@@ -37,7 +37,6 @@ const App = () => {
     exact path="/movies/:id" component={ Movie } />
 
     <MovieList movies={ movieList } />
-    <Movie key={Movie.id} />
     </div>
   );
 };
