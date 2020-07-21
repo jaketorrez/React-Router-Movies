@@ -3,7 +3,8 @@ import React from 'react';
 const MovieList = props => {
   return (
     <div className="movie-list">
-      {props.movies.map(movie => (
+      { !props.movies ? <h1>Movies:</h1>
+      : props.movies.map(movie => (
         <MovieDetails key={movie.id} movie={movie} />
       ))}
     </div>
